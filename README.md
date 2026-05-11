@@ -1,6 +1,6 @@
 # 🎧 AI-Powered Customer Support Copilot
 
-> An intelligent, production-ready support agent that eliminates context-switching for support teams — combining RAG, persistent memory, and LangChain tool calling into a one-click response generator.
+> An intelligent, production-ready support agent that eliminates context-switching for support teams combining RAG, persistent memory, and LangChain tool calling into a one-click response generator.
 
 ![Python](https://img.shields.io/badge/Python-3.11-blue?logo=python)
 ![FastAPI](https://img.shields.io/badge/FastAPI-0.115-green?logo=fastapi)
@@ -22,7 +22,7 @@ A one-click AI copilot that:
 1. **Retrieves customer context** from CRM and billing systems via tool calling
 2. **Searches the knowledge base** using semantic RAG (ChromaDB)
 3. **Recalls past interactions** using persistent memory (Mem0)
-4. **Drafts a complete, personalized response** — ready for agent review in seconds
+4. **Drafts a complete, personalized response** ready for agent review in seconds
 
 ---
 
@@ -128,13 +128,13 @@ Interactive docs available at `/docs` (Swagger UI).
 
 When `POST /tickets/{id}/generate` is called:
 
-1. **RAG Search** — Queries ChromaDB for knowledge base articles relevant to the ticket
-2. **Memory Recall** — Fetches past interaction summaries for the customer from Mem0
-3. **Agent Reasoning** — LangChain agent decides which tools to call:
-   - `get_customer_crm_info(customer_id)` — fetches name, plan, account manager
-   - `get_billing_info(customer_id)` — fetches payment status and invoices
-4. **Response Generation** — GPT-4o-mini synthesizes all context into a draft response
-5. **Memory Update** — Interaction is saved to Mem0 for future context
+1. **RAG Search** - Queries ChromaDB for knowledge base articles relevant to the ticket
+2. **Memory Recall** - Fetches past interaction summaries for the customer from Mem0
+3. **Agent Reasoning** - LangChain agent decides which tools to call:
+   - `get_customer_crm_info(customer_id)` - fetches name, plan, account manager
+   - `get_billing_info(customer_id)` - fetches payment status and invoices
+4. **Response Generation** - GPT-4o-mini synthesizes all context into a draft response
+5. **Memory Update** - Interaction is saved to Mem0 for future context
 
 ---
 
