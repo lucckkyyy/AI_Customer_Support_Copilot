@@ -185,7 +185,4 @@ To enable: add `DOCKER_USERNAME`, `DOCKER_PASSWORD`, `EC2_HOST`, `EC2_USER`, `EC
 
 ## 🙋 Author
 
-**Aryan Rajguru**
-- 🌐 [aryanrajguru.com](https://aryanrajguru.com)
-- 💼 [LinkedIn](https://linkedin.com/in/aryanrajguru)
-- 🐙 [GitHub](https://github.com/YOUR_USERNAME)
+*Author: Aryan Rajguru*
